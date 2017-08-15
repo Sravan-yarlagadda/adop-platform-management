@@ -21,7 +21,7 @@ generateWorkspaceJob.with{
         injectPasswords()
         maskPasswords()
         environmentVariables {
-            env('DC',"${LDAP_ROOTDN}")
+            env('DC',"http://ldap.test")
             env('OU_GROUPS','ou=groups')
             env('OU_PEOPLE','ou=people')
             env('OUTPUT_FILE','output.ldif')
